@@ -1,6 +1,7 @@
-# Install
+# Install
 
-## External requirements
+## External requirements
+
 - a working mail server, and a correct django configuration
 - for dev, it's an sqlite database, django support other backend
 - Flag is configurable on settings.py
@@ -13,7 +14,7 @@ docker compose build
 docker compose up -d
 ```
 
-## Init
+## Init
 
 ```
 docker compose exec python ./manage.py migrate
@@ -63,7 +64,7 @@ Cookie: search_parameters=%7B%22addresses%22%3A%22on%22%2C%22subnets%22%3A%22on%
 Now, you can use the auth param, with the correct host to login as the admin user, go to:
 `http://localhost:8001/nopasslogin?auth=YWRtaW5AYWRtaW4uaG9zdDoxcUJzeHM6ajRRcjliNkc2Z1BmRmNQRXVpVDkzQkItNzI4dVFSOG9TU0J4Z2k0MzhxVQ==`
 
-# Note
+# Note
 
 Any user in the special group will automaticly click on the link, you should ensure that the django code can reach the controlled target (in a docker, the localhost:8002 will not work)
 
