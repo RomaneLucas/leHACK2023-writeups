@@ -64,10 +64,3 @@ Cookie: search_parameters=%7B%22addresses%22%3A%22on%22%2C%22subnets%22%3A%22on%
 Now, you can use the auth param, with the correct host to login as the admin user, go to:
 `http://localhost:8001/nopasslogin?auth=YWRtaW5AYWRtaW4uaG9zdDoxcUJzeHM6ajRRcjliNkc2Z1BmRmNQRXVpVDkzQkItNzI4dVFSOG9TU0J4Z2k0MzhxVQ==`
 
-# Note
-
-Any user in the special group will automaticly click on the link, you should ensure that the django code can reach the controlled target (in a docker, the localhost:8002 will not work)
-
-For now, as a poc (/TODO):
-- login and logout views are not handled correctly, login is accessible when you're already logged in for exemple
-- dev deps are installed in the docker image
