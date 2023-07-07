@@ -40,7 +40,7 @@ nc -l -p 8082
 Get a victim on the user directory page (http://localhost:8001/userdir)
 Ask for a no pass login token, with and evil host and the victim mail
 ```
-curl -H "Host: localhost:8002" http://localhost:8001/nopasslogin\?email\=special1@email.host
+curl -H "Host: localhost:8082" http://localhost:8001/nopasslogin\?email\=special1@email.host
 ```
 
 Wait for the admin to click on the no login link, and get the token, you will receive some data on the netcat shell, for exemple:
