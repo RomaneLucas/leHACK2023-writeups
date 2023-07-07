@@ -31,7 +31,7 @@ Then logout from the admin. (This is important, if not, you will be loggin on th
 PASSWORD DJANGO
 RGdadGGUQmuoCfGUX^ktU&voyuHhsy3!
 
-## Demo Exploit
+## Demo Exploit
 
 Launch a nc listner
 ```
